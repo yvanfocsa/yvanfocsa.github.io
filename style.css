@@ -2361,3 +2361,36 @@ main, .footer, .topbar {
     font-size: 0.80rem; /* Réduit légèrement la taille du texte */
   }
 }
+@media (max-width: 960px) {
+  /* Aligne le conteneur de la grille pour centrer les cartes */
+  .competences-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-top: 40px;
+    justify-items: center; /* Centre les éléments de la grille horizontalement */
+  }
+
+  /* Centre le contenu de chaque carte */
+  .competence-card--large {
+    flex-basis: 100%;
+    max-width: 400px; /* Limite la largeur des cartes pour éviter un étirement excessif sur les tablettes */
+    margin: 0 auto;
+    padding: 24px;
+  }
+  
+  /* Ajuste l'alignement du texte à l'intérieur des cartes */
+  .competence-card--large h3,
+  .competence-card--large p.muted {
+    text-align: center;
+  }
+}
+
+/* Assurez-vous que les boutons de filtres sont centrés */
+.poles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 16px;
+}
