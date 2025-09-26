@@ -127,6 +127,14 @@
         <div id="cookie-banner" class="cookie-banner" hidden><div class="container cookie-banner-content"><p class="cookie-banner-text" data-key="cookieBannerText">Ce site utilise des cookies pour améliorer votre expérience. En cliquant sur ”Accepter”, vous consentez à tous les cookies. Vous pouvez les refuser ou personnaliser vos choix.</p><div class="cookie-banner-actions"><button id="accept-cookies" class="btn" data-key="cookieAccept">Tout accepter</button><button id="reject-cookies" class="btn btn--ghost" data-key="cookieReject">Tout refuser</button><a href="gestion-cookies.html" class="cookie-customize" data-key="cookieCustomize">Personnaliser →</a></div></div></div>
     </footer>
     
-    <script src="script.js" defer></script>
+        <!-- === NOUVELLE ARCHITECTURE MODULAIRE === -->
+    <!-- Module principal ES6 -->
+    <script type="module" src="js/main.js"></script>
+    
+    <!-- Fallback pour navigateurs anciens -->
+    <script nomodule>
+      console.warn('⚠️ Ce navigateur ne supporte pas les modules ES6.');
+      console.info('ℹ️ Certaines fonctionnalités avancées peuvent être limitées.');
+    </script>
 </body>
 </html>
