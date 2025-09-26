@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title data-key="blogMetaTitle">
+    OUDAR Avocats | Blog : Actualités et Conseils juridiques
+  </title>
+  <meta
+    name="description"
+    content="Le blog d'OUDAR Avocats est votre ressource pour les actualités juridiques et nos analyses d'experts. Retrouvez des conseils pertinents en droit des affaires et immobilier."
+    data-key="blogMetaDesc"
+  />
+
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Lato:wght@400;700&display=block&subset=latin,cyrillic"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+  <body>
+    <!-- Topbar -->
+    <div class="topbar">
+      <div class="container inner">
+        <div class="phones">
+          <a
+            class="tel"
+            href="tel:+33186908435"
+            ><span data-key="phoneParisLabel">Paris :</span>&nbsp;+33&nbsp;1&nbsp;86&nbsp;90&nbsp;84&nbsp;35</a
+          ><a
+            class="tel"
+            href="tel:+33699020888"
+            ><span data-key="phonePortLabel">Port. :</span
+            >&nbsp;+33&nbsp;6&nbsp;99&nbsp;02&nbsp;08&nbsp;88</a
+          >
+        </div>
+      </div>
+    </div>
+
+<header class="site" role="banner">
+  <div class="container inner">
+    <a class="brand" href="./" aria-label="OUDAR Avocats — Accueil">
+      <img src="assets/logo_variante.png" width="56" height="56" alt="Logo OUDAR Avocats">
+    </a>
+    <nav class="primary" aria-label="Navigation principale">
+      <ul>
+        <li><a href="./" data-key="navHome">Accueil</a></li>
+        <li><a href="cabinet.html" data-key="navCabinet">Le Cabinet</a></li>
+        <li><a href="expertises.html" data-key="navExpertises">Expertises</a></li>
+        <li><a href="honoraires.html" data-key="navFees">Honoraires</a></li>
+        <li><a href="blog.html" data-key="navBlog">Blog</a></li>
+        <li><a href="contact.html" data-key="navContact">Contact</a></li>
+        <li><a href="consultation.html" class="btn cta" data-key="navConsultation">Rendez-vous</a></li>
+      </ul>
+    </nav>
+    <nav class="lang" aria-label="Langues">
+      <button data-lang="fr" class="active">FR</button><span>|</span><button data-lang="en">EN</button><span>|</span><button data-lang="ru">RU</button>
+    </nav>
+    <button id="theme-toggle" aria-label="Basculer le thème"><svg class="sun-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M12 6a6 6 0 100 12 6 6 0 000-12z"></path></svg><svg class="moon-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg></button>
+    <button class="menu-toggle btn btn--ghost" aria-controls="menu" aria-expanded="false" data-key="navMenu">Menu</button>
+  </div>
+
+  <div class="drawer" id="menu" hidden>
+    <div class="panel">
+        <div class="drawer-header">
+            <a class="brand" href="./">
+                <img src="assets/logo_variante.png" width="40" height="40" alt="Logo OUDAR Avocats">
+            </a>
+            <button class="close-menu-btn" aria-label="Fermer le menu">×</button>
+        </div>
+        <nav class="drawer-nav" aria-label="Menu mobile">
+            <ul>
+                <li><a href="./" data-key="navHome">Accueil</a></li>
+                <li><a href="cabinet.html" data-key="navCabinet">Le Cabinet</a></li>
+                <li><a href="expertises.html" data-key="navExpertises">Expertises</a></li>
+                <li><a href="honoraires.html" data-key="navFees">Honoraires</a></li>
+                <li><a href="blog.html" data-key="navBlog">Blog</a></li>
+            </ul>
+        </nav>
+        <div class="drawer-footer">
+            <a href="consultation.html" class="btn cta" data-key="navConsultation">Rendez-vous</a>
+            <a href="contact.html" class="btn btn--ghost" data-key="navContact">Contact</a>
+        </div>
+    </div>
+  </div>
+</header>
+
+    <!-- Main -->
+    <main id="contenu">
+      <section class="section">
+        <div class="container">
+          <div class="blog-header">
+            <h1 style="font-family: var(--font-title)" data-key="blogTitle">
+              Analyses &amp; Actualités
+            </h1>
+            <p class="lead" style="text-align: center" data-key="blogLead">
+              Retrouvez nos décryptages de la jurisprudence, nos études de cas
+              et nos conseils pratiques pour naviguer le paysage juridique.
+            </p>
+
+            <div class="blog-search">
+              <input
+                type="search"
+                placeholder="Rechercher un article..."
+                data-key="blogSearch"
+              />
+            </div>
+
+            <div class="blog-filters">
+              <button
+                class="btn active"
+                data-filter="all"
+                data-key="blogFilterAll"
+              >
+                Tous
+              </button>
+              <button
+                class="btn"
+                data-filter="immobilier"
+                data-key="blogFilterImmo"
+              >
+                Immobilier
+              </button>
+              <button
+                class="btn"
+                data-filter="construction"
+                data-key="blogFilterConstruction"
+              >
+                Construction
+              </button>
+              <button
+                class="btn"
+                data-filter="societes"
+                data-key="blogFilterCorp"
+              >
+                Sociétés
+              </button>
+              <button
+                class="btn"
+                data-filter="international"
+                data-key="blogFilterIntl"
+              >
+                International
+              </button>
+            </div>
+          </div>
+
+          <!-- Grille d’articles -->
+          <div class="blog-grid">
+            <a href="#" class="blog-card" data-category="immobilier">
+              <div
+                class="blog-card-img"
+                style="
+                  background-image: url('https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?q=80&w=2070');
+                "
+              ></div>
+              <div class="blog-card-content">
+                <span class="blog-card-category" data-key="blogCard1Cat"
+                  >Droit Immobilier</span
+                >
+                <h3 data-key="blogCard1Title">
+                  Vices cachés : 5 points clés pour sécuriser votre achat
+                </h3>
+                <p data-key="blogCard1Desc">
+                  L'acquisition d'un bien est une étape majeure. Découvrez les
+                  réflexes essentiels pour vous prémunir contre les mauvaises
+                  surprises...
+                </p>
+                <span class="blog-card-link" data-key="blogReadMore"
+                  >Lire la suite →</span
+                >
+              </div>
+            </a>
+
+            <a href="#" class="blog-card" data-category="societes">
+              <div
+                class="blog-card-img"
+                style="
+                  background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070');
+                "
+              ></div>
+              <div class="blog-card-content">
+                <span class="blog-card-category" data-key="blogCard2Cat"
+                  >Droit des Sociétés</span
+                >
+                <h3 data-key="blogCard2Title">
+                  Le pacte d'associés, un outil indispensable
+                </h3>
+                <p data-key="blogCard2Desc">
+                  Souvent négligé lors de la création, le pacte d'associés est
+                  pourtant crucial pour anticiper les conflits et assurer la
+                  pérennité de l'entreprise.
+                </p>
+                <span class="blog-card-link" data-key="blogReadMore"
+                  >Lire la suite →</span
+                >
+              </div>
+            </a>
+
+            <a href="#" class="blog-card" data-category="construction">
+              <div
+                class="blog-card-img"
+                style="
+                  background-image: url('https://images.unsplash.com/photo-1519751138087-5bf79df62d5b?q=80&w=2070');
+                "
+              ></div>
+              <div class="blog-card-content">
+                <span class="blog-card-category" data-key="blogCard3Cat"
+                  >Droit de la Construction</span
+                >
+                <h3 data-key="blogCard3Title">
+                  Retards de chantier : quels recours pour le maître d'ouvrage ?
+                </h3>
+                <p data-key="blogCard3Desc">
+                  Votre chantier n'avance pas ? Des pénalités de retard à la
+                  réception des travaux, nous explorons les leviers à votre
+                  disposition.
+                </p>
+                <span class="blog-card-link" data-key="blogReadMore"
+                  >Lire la suite →</span
+                >
+              </div>
+            </a>
+
+            <a href="#" class="blog-card" data-category="immobilier">
+              <div
+                class="blog-card-img"
+                style="
+                  background-image: url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1973');
+                "
+              ></div>
+              <div class="blog-card-content">
+                <span class="blog-card-category" data-key="blogCard4Cat"
+                  >Droit de la Copropriété</span
+                >
+                <h3 data-key="blogCard4Title">
+                  Contester une décision d'Assemblée Générale
+                </h3>
+                <p data-key="blogCard4Desc">
+                  Une résolution a été votée en votre absence ou contre votre
+                  avis ? Le délai pour agir est court. Analyse des motifs et de
+                  la procédure.
+                </p>
+                <span class="blog-card-link" data-key="blogReadMore"
+                  >Lire la suite →</span
+                >
+              </div>
+            </a>
+
+            <a href="#" class="blog-card" data-category="international">
+              <div
+                class="blog-card-img"
+                style="
+                  background-image: url('https://images.unsplash.com/photo-1532618753934-a293b9679a73?q=80&w=2070');
+                "
+              ></div>
+              <div class="blog-card-content">
+                <span class="blog-card-category" data-key="blogCard5Cat"
+                  >International</span
+                >
+                <h3 data-key="blogCard5Title">
+                  Obtenir un titre de séjour « Passeport Talent »
+                </h3>
+                <p data-key="blogCard5Desc">
+                  La France attire les talents internationaux. Qui est éligible
+                  au « Passeport Talent » et quelles sont les démarches à
+                  accomplir ?
+                </p>
+                <span class="blog-card-link" data-key="blogReadMore"
+                  >Lire la suite →</span
+                >
+              </div>
+            </a>
+
+            <a href="#" class="blog-card" data-category="immobilier">
+              <div
+                class="blog-card-img"
+                style="
+                  background-image: url('https://images.unsplash.com/photo-1605146769289-440113cc3d00?q=80&w=2070');
+                "
+              ></div>
+              <div class="blog-card-content">
+                <span class="blog-card-category" data-key="blogCard6Cat"
+                  >Droit Immobilier</span
+                >
+                <h3 data-key="blogCard6Title">
+                  Bail commercial : les subtilités de la clause d'indexation
+                </h3>
+                <p data-key="blogCard6Desc">
+                  La révision du loyer est un point sensible. Comprendre le
+                  fonctionnement de la clause d'indexation pour éviter les
+                  litiges.
+                </p>
+                <span class="blog-card-link" data-key="blogReadMore"
+                  >Lire la suite →</span
+                >
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+      <div class="container footer-grid">
+        <div class="footer-col id-block">
+          <img
+            src="assets/logo-footer.png"
+            alt="Logo OUDAR Avocats"
+            class="footer-logo"
+          />
+          <p class="muted" data-key="footerDesc">
+            Cabinet à Paris & Nice. Immobilier, construction, sociétés,
+            étrangers, famille internationale.
+          </p>
+        </div>
+
+        <div class="footer-col links">
+          <strong data-key="footerDomains">Nos Domaines</strong>
+          <ul>
+            <li><a href="expertises.html#poleA" data-key="footerDomainImmo">Immobilier</a></li>
+            <li><a href="expertises.html#poleA" data-key="footerDomainConstruction">Construction</a></li>
+            <li><a href="expertises.html#poleA" data-key="footerDomainCopro">Copropriété</a></li>
+            <li><a href="expertises.html#poleB" data-key="footerDomainSocietes">Sociétés</a></li>
+            <li><a href="expertises.html#poleB" data-key="footerDomainEtrangers">Étrangers</a></li>
+            <li><a href="expertises.html#poleB" data-key="footerDomainMediation">Médiation</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col links">
+          <strong data-key="footerFirm">Le Cabinet</strong>
+          <ul>
+            <li><a href="cabinet.html" data-key="footerAbout">À propos</a></li>
+            <li>
+              <a href="cabinet.html#equipe" data-key="footerTeam"
+                >Notre équipe</a
+              >
+            </li>
+            <li>
+              <a href="honoraires.html" data-key="footerFees">Honoraires</a>
+            </li>
+            <li><a href="blog.html" data-key="footerBlog">Blog</a></li>
+            <li><a href="contact.html" data-key="footerContact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col socials">
+          <strong data-key="follow">Suivez-nous :</strong>
+          <div class="icons">
+              <a
+                aria-label="LinkedIn"
+                href="https://www.linkedin.com/company/27023630/"
+                target="_blank"
+                rel="noopener"
+                class="icon li"
+                title="LinkedIn"
+              ></a>
+				<a
+                aria-label="Instagram"
+                href="#"
+                target="_blank"
+                rel="noopener"
+                class="icon ig"
+                title="Instagram"
+              ></a>
+            <a
+              aria-label="Facebook"
+              href="#"
+              target="_blank"
+              rel="noopener"
+              class="icon fb"
+              title="Facebook"
+            ></a>
+              <a
+                aria-label="VK"
+                href="#"
+                target="_blank"
+                rel="noopener"
+                class="icon vk"
+                title="VK"
+              ></a>
+			                <a
+                aria-label="X (Twitter)"
+                href="#" target="_blank"
+                rel="noopener"
+                class="icon x" title="X (Twitter)"
+              ></a>
+          </div>
+        </div>
+      </div>
+      <div class="container footer-legal">
+        <p class="muted">
+          © <span id="year"></span> OUDAR Avocats —
+          <span data-key="footerRights">Tous droits réservés</span> ·
+          <a href="mentions-legales.html" data-key="footerLegal">Mentions Légales</a> ·
+          <a href="plan-du-site.html" data-key="footerSitemap">Plan du site</a> ·
+          <a href="gestion-cookies.html" data-key="footerCookies">Gestion des cookies</a>
+        </p>
+      </div>
+	      <!-- BANDEAU COOKIES -->
+    <div id="cookie-banner" class="cookie-banner" hidden>
+        <div class="container cookie-banner-content">
+            <p class="cookie-banner-text" data-key="cookieBannerText">Ce site utilise des cookies pour améliorer votre expérience. En cliquant sur ”Accepter”, vous consentez à tous les cookies. Vous pouvez les refuser ou personnaliser vos choix.</p>
+            <div class="cookie-banner-actions">
+                <button id="accept-cookies" class="btn" data-key="cookieAccept">Tout accepter</button>
+                <button id="reject-cookies" class="btn btn--ghost" data-key="cookieReject">Tout refuser</button>
+                <a href="gestion-cookies.html" class="cookie-customize" data-key="cookieCustomize">Personnaliser →</a>
+            </div>
+        </div>
+    </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
