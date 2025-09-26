@@ -230,6 +230,14 @@
     </div>
     </footer>
 
-    <script src="script.js" defer></script>
+        <!-- === NOUVELLE ARCHITECTURE MODULAIRE === -->
+    <!-- Module principal ES6 -->
+    <script type="module" src="js/main.js"></script>
+    
+    <!-- Fallback pour navigateurs anciens -->
+    <script nomodule>
+      console.warn('⚠️ Ce navigateur ne supporte pas les modules ES6.');
+      console.info('ℹ️ Certaines fonctionnalités avancées peuvent être limitées.');
+    </script>
 </body>
 </html>

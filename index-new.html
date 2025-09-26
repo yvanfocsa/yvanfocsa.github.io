@@ -147,8 +147,194 @@
         </div>
       </section>
 
-      <!-- Le reste du contenu reste identique... -->
-      <!-- Seul le script change -->
+      <!-- Le Cabinet (présentation) -->
+      <section
+        class="section presentation"
+        id="presentation"
+        aria-labelledby="h2-presentation"
+      >
+        <div class="container">
+          <h2 id="h2-presentation" data-key="aboutNewTitle" data-animate>
+            Un Cabinet Engagé à vos Côtés
+          </h2>
+
+          <div class="highlights" style="margin-top: 24px">
+            <article class="card highlight" data-animate>
+              <h3 data-key="highlight1Title">Expertise Pointue</h3>
+              <p class="muted" data-key="highlight1Desc">
+                Une expertise pointue en droit immobilier, construction et copropriété, pour des stratégies juridiques toujours pertinentes.
+              </p>
+            </article>
+
+            <article class="card highlight" data-animate>
+              <h3 data-key="highlight2Title">Approche Sur-Mesure</h3>
+              <p class="muted" data-key="highlight2Desc">
+                Une analyse sur-mesure de chaque dossier pour construire une solution personnalisée, en conseil comme en contentieux.
+              </p>
+            </article>
+
+            <article class="card highlight" data-animate>
+              <h3 data-key="highlight3Title">Transparence</h3>
+              <p class="muted" data-key="highlight3Desc">
+                Transparence des honoraires, communication proactive et grande disponibilité pour un suivi constant de votre dossier.
+              </p>
+            </article>
+          </div>
+
+          <div class="svetlana-quote-block" data-animate>
+            <div class="svetlana-photo-wrapper">
+              <img
+                src="assets/team/svetlana-oudar.webp"
+                alt="Photo professionnelle de Svetlana Oudar"
+                width="240"
+                height="300"
+                loading="lazy"
+                class="svetlana-photo"
+              />
+            </div>
+            <div class="quote-content">
+              <blockquote data-key="svetlanaQuote">
+                Le cabinet défend les intérêts de ses clients avec exigence et constance. Sa mission repose sur la rigueur, l'éthique et la recherche de résultats durables, qui constituent les fondements de la relation de confiance établie avec les personnes qu'il assiste.
+              </blockquote>
+              <cite data-key="svetlanaQuoteAuthor">
+                — Avocate Fondatrice, Cabinet OUDAR Avocats
+              </cite>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Expertises (carrousel) -->
+      <section
+        class="section areas"
+        id="competences"
+        aria-labelledby="h2-competences"
+      >
+        <div class="container">
+          <h2 id="h2-competences" data-key="areasTitle" data-animate>
+            Expertises
+          </h2>
+
+          <!-- Tabs pôles -->
+          <div class="poles" role="tablist" aria-label="Pôles">
+            <button
+              class="pole active"
+              role="tab"
+              aria-selected="true"
+              data-target="#poleA"
+              data-key="pole1"
+            >
+              Pôle Immobilier & Construction
+            </button>
+            <button
+              class="pole"
+              role="tab"
+              aria-selected="false"
+              data-target="#poleB"
+              data-key="pole2"
+            >
+              Pôle Personnes, Famille & Entreprises
+            </button>
+          </div>
+
+          <!-- Carrousel Pôle A -->
+          <div
+            id="poleA"
+            class="carousel-shell"
+            data-carousel
+            data-animate
+          >
+            <button class="carousel-arrow left" aria-label="Précédent">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M15 4l-8 8 8 8"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+            <div class="carousel-track">
+              <a href="expertise-droit-immobilier.html" class="card competence-card">
+                <h3 data-key="expertiseCard1Title">Droit Immobilier</h3>
+                <p class="muted" data-key="expertiseCard1Desc">
+                  Acquisition, baux, contentieux, promotion.
+                </p>
+              </a>
+              <a href="expertise-droit-de-la-construction.html" class="card competence-card">
+                <h3 data-key="expertiseCard2Title">Droit de la Construction</h3>
+                <p class="muted" data-key="expertiseCard2Desc">
+                  Marchés privés, responsabilités, expertises.
+                </p>
+              </a>
+              <a href="expertise-droit-de-la-copropriete.html" class="card competence-card">
+                <h3 data-key="expertiseCard3Title">Droit de la Copropriété</h3>
+                <p class="muted" data-key="expertiseCard3Desc">
+                  AG, charges, travaux, contentieux syndicat.
+                </p>
+              </a>
+            </div>
+            <button class="carousel-arrow right" aria-label="Suivant">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M9 4l8 8-8 8"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <!-- Carrousel Pôle B -->
+          <div
+            id="poleB"
+            class="carousel-shell"
+            data-carousel
+            hidden
+            data-animate
+          >
+            <button class="carousel-arrow left" aria-label="Précédent">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M15 4l-8 8 8 8"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+            <div class="carousel-track">
+              <a href="expertise-contentieux-civil-commercial.html" class="card competence-card">
+                <h3 data-key="expertiseCard6Title">Droit des Sociétés</h3>
+                <p class="muted" data-key="expertiseCard6Desc">Création, pactes, gouvernance, cessions.</p>
+              </a>
+              <a href="expertise-droit-famille.html" class="card competence-card">
+                <h3 data-key="expertiseCard10Title">Famille internationale</h3>
+                <p class="muted" data-key="expertiseCard10Desc">Divorce, garde, enlèvement, successions.</p>
+              </a>
+            </div>
+            <button class="carousel-arrow right" aria-label="Suivant">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M9 4l8 8-8 8"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
       
     </main>
 
